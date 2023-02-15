@@ -12,7 +12,7 @@ const Home = () => {
       <div className="mx-auto w-[80%] flex items-center justify-between h-full px-4 ">
         <div>
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I'm Junior a Full Stack Developer
+            I'm a Junior Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
             I have 2 years of experience building and desgining software.
