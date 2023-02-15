@@ -4,15 +4,15 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="pt-[30px] pb-9 w-full md:min-h-screen bg-gradient-to-b from-gray-900 to-gray-700 text-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full pb-20 md:pb-0">
-        <div className="pb-8 pt-10 md:pt-0">
+      <div className="w-[80%] mx-auto">
+        <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-xl mt-10">
           I have started learning programming when I was 13 , Back then I
           started with python , I worked with python for about 2 years and that
           moments I was solid in python
