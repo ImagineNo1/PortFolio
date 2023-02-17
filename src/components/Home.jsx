@@ -9,7 +9,7 @@ const Home = () => {
       name="home"
       className="w-full h-screen bg-gradient-to-b from-black via-black to-gray-600"
     >
-      <div className="mx-auto w-[80%] flex items-center justify-between h-full px-4 ">
+      <div className="mx-auto w-[80%] flex items-center justify-between gap-[10px] h-full px-4 ">
         <div>
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             I'm a Junior Full Stack Developer
@@ -37,7 +37,7 @@ const Home = () => {
         <img
           src={HeroImage}
           alt="my profile"
-          className="rounded-2xl object-cover w-[400px] hidden lg:block"
+          className="rounded-2xl object-cover w-[350px] hidden lg:block"
         />
       </div>
     </div>
