@@ -1,12 +1,12 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import HeroImage from "../assets/heroImage.png";
 import { Link } from "react-scroll";
+import Image from "next/image";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div
-      name="home"
+      id="home"
       className="w-full h-screen bg-gradient-to-b from-black via-black to-gray-600"
     >
       <div className="mx-auto w-[80%] flex items-center justify-between gap-[10px] h-full px-4 ">
@@ -34,8 +34,10 @@ const Home = () => {
           </div>
         </div>
 
-        <img
-          src={HeroImage}
+        <Image
+          src={"/heroImage.png"}
+          width={350}
+          height={350}
           alt="my profile"
           className="rounded-2xl object-cover w-[350px] hidden lg:block"
         />
@@ -44,4 +46,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

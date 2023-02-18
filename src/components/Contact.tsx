@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div
-      name="contact"
+      id={"contact"}
       className="w-full md:min-h-screen bg-gradient-to-b from-gray-700 to-black p-4 text-white"
     >
       <div className="w-[80%] mx-auto">
@@ -34,7 +34,7 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Enter your message"
-              rows="10"
+              rows={10}
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
 

@@ -1,52 +1,47 @@
 import React from "react";
 
-import bookstore from "../assets/portfolio/bookstore.jpg";
-import FullShoppingApp from "../assets/portfolio/Full-shp-app.jpg";
-import ImagineCssLibrary from "../assets/portfolio/imagine-css.jpg";
-import MovieDB from "../assets/portfolio/movieDB.jpg";
-import YearsFact from "../assets/portfolio/years-fact.jpg";
-import todo from "../assets/portfolio/todo.jpg";
+import Image from "next/image";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: todo,
+      src: "/portfolio/todo.jpg",
       title: "Todo App",
       demo: "https://todo-imagineno1.vercel.app/",
       github: "https://github.com/ImagineNo1/TodoApp",
     },
     {
       id: 2,
-      src: YearsFact,
+      src: "/portfolio/years-fact.jpg",
       title: "Years Fact",
       demo: "",
       github: "https://github.com/ImagineNo1/years-fact",
     },
     {
       id: 3,
-      src: MovieDB,
+      src: "/portfolio/movieDB.jpg",
       title: "movie DB",
       demo: "https://movie-cw54od2fy-imagineno1.vercel.app/",
       github: "https://github.com/ImagineNo1/movie-db",
     },
     {
       id: 4,
-      src: FullShoppingApp,
+      src: "/portfolio/Full-shp-app.jpg",
       title: "Full Shoping App",
       demo: "",
       github: "https://github.com/ImagineNo1/Full-Shopping-App",
     },
     {
       id: 5,
-      src: ImagineCssLibrary,
+      src: "/portfolio/imagine-css.jpg",
       title: "Imagine Css Library",
       demo: "",
       github: "https://github.com/ImagineNo1/imagine-css-library",
     },
     {
       id: 6,
-      src: bookstore,
+      src: "/portfolio/bookstore.jpg",
       title: "BookStore",
       demo: "https://bookstore-imagineno1.vercel.app/",
       github: "https://github.com/ImagineNo1/BookStore",
@@ -55,7 +50,7 @@ const Portfolio = () => {
 
   return (
     <div
-      name="portfolio"
+      id="portfolio"
       className="w-full md:min-h-screen bg-gradient-to-b from-black via-gray-800 to-gray-600 py-[30px]"
     >
       <div className="w-[80%] mx-auto ">
@@ -71,11 +66,16 @@ const Portfolio = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, title, demo, github }) => (
             <div key={id} className=" shadow-md shadow-white rounded-lg">
-              <img
-                src={src}
-                alt=""
-                className="rounded-md duration-200 hover:scale-105"
-              />
+              <div className="w-full">
+                <Image
+                  src={src}
+                  alt={title}
+                  layout="responsive"
+                  width={500}
+                  height={500}
+                  className="rounded-md duration-200 hover:scale-105"
+                />
+              </div>
               <p className="bg-gradient-to-br bg-gre from-green-800 to-green-500 text-center rounded-sm mt-2 py-1 px-3 text-white text-lg">
                 {title}
               </p>
