@@ -54,25 +54,28 @@ const Experience = () => {
       id: 9,
       src: "/BootStrap.png",
       title: "Bootstrap",
-      style: "shadow-gray-400",
+      style: "shadow-purple-400",
     },
     {
       id: 10,
       src: "/Express.png",
       title: "Express",
-      style: "shadow-gray-400",
+      style: "shadow-green-400",
+      imageStyle: "rounded-lg",
     },
     {
       id: 11,
       src: "/Sass.png",
       title: "Sass",
-      style: "shadow-gray-400",
+      style: "shadow-pink-400",
+      imageStyle: "rounded-lg",
     },
     {
       id: 12,
       src: "/MongoDB.png",
       title: "MongoDB",
-      style: "shadow-gray-400",
+      style: "shadow-green-300",
+      imageStyle: "rounded-lg",
     },
   ];
 
@@ -92,7 +95,7 @@ const Experience = () => {
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8  px-12 sm:px-0">
-          {techs.map(({ id, src, title, style }) => (
+          {techs.map(({ id, src, title, style, imageStyle }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
@@ -102,7 +105,7 @@ const Experience = () => {
                 alt={title}
                 width={100}
                 height={100}
-                className="w-20 mx-auto"
+                className={`w-20 mx-auto ${imageStyle}`}
               />
               <p className="mt-4">{title}</p>
             </div>
