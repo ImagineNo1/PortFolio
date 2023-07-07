@@ -46,6 +46,13 @@ const Portfolio = () => {
       demo: "https://bookstore-imagineno1.vercel.app/",
       github: "https://github.com/ImagineNo1/BookStore",
     },
+    {
+      id: 7,
+      src: "/portfolio/phunter.jpg",
+      title: "Propertyhunter",
+      demo: "https://propertyhunter.app/",
+      github: "https://github.com/Interactive10/core",
+    },
   ];
 
   return (

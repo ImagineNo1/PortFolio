@@ -77,6 +77,20 @@ const Experience = () => {
       style: "shadow-green-300",
       imageStyle: "rounded-lg",
     },
+    {
+      id: 13,
+      src: "/rnative.jpg",
+      title: "React native",
+      style: "shadow-pink-400",
+      imageStyle: "rounded-lg",
+    },
+    {
+      id: 14,
+      src: "/ai.png",
+      title: "AI",
+      style: "shadow-green-300",
+      imageStyle: "rounded-lg",
+    },
   ];
 
   return (

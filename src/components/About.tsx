@@ -38,6 +38,19 @@ const About = () => {
           I am familiar with the MongoDB database and I use many additional
           tools that I will mention them in the portfolio section
         </p>
+        <br />
+        <p className="text-xl">
+          since 2022 im working in england company called interactive10 , im
+          working remotely from iran , and The project im currently working on
+          is https://propertyhunter.app/ , which we working on about 1 yaer and
+          half
+        </p>
+        <br />
+        <p className="text-xl">
+          I also very comfortable with reactnative and I bulit moblie apps
+          several times and worked about 3 months on AI and building models and
+          training them
+        </p>
       </div>
     </div>
   );
